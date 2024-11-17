@@ -1,0 +1,43 @@
+.background{
+    max-width:100%;
+    height: auto;
+}
+
+.content{
+    z-index:2;
+    width:50%;
+    height: 109%;
+    position: absolute;
+    top:75px;
+    left:0;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%); /*xy(左上右上右下左下)*/
+    background-color: white;
+    overflow: hidden;
+    padding-left: 2%;
+
+}
+
+.content >h1{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.content >div{
+    width: 55%;
+    height: 100%;
+    line-height: 50px;
+    overflow-y: auto;
+}
+
+.phone-content{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .content{
+        display:none;
+    }
+    .phone-content{
+        display: block;
+    }
+}

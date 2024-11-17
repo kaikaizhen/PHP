@@ -1,0 +1,76 @@
+.content-between {
+    width: 100%; /* 確保寬度為100% */
+    padding: 10px;
+    display: flex; /* 使用 Flexbox */
+    align-items: center; /* 垂直居中 */
+    justify-content: space-around; /* 水平間距均等 */
+}
+
+.circel {
+    width: 300px; /* 圓圈寬度 */
+    height: 300px; /* 圓圈高度 */
+    margin: 5px; /* 添加邊距以確保圓圈間距 */
+    border-radius: 50%; /* 使其成為圓形 */
+    border: 1px solid #F0F0F0;
+    background-color: #F0F0F0;
+    display: flex; /* 使用 Flexbox */
+    flex-direction: column; /* 垂直排列內容 */
+    align-items: center; /* 水平置中 */
+    justify-content: center; /* 垂直置中 */
+    transition: width 0.5s ease, height 0.5s ease; /* 添加平滑過渡 */
+    cursor: pointer; /* 鼠標指標改變為手指 */
+}
+
+.circel:hover {
+    width: 310px; 
+    height: 310px; 
+}
+
+.icon {
+    font-size: 150px; 
+}
+
+.icon-content {
+    text-align: center; 
+}
+
+.icon-content p {
+    font-size: 50px; 
+    margin: 0; 
+}
+
+@media (max-width:768px) {
+
+    .circel {
+        width: 200px; /* 圓圈寬度 */
+        height: 200px; /* 圓圈高度 */
+        margin: 5px; /* 添加邊距以確保圓圈間距 */
+        border-radius: 50%; /* 使其成為圓形 */
+        border: 1px solid #F0F0F0;
+        background-color: #F0F0F0;
+        display: flex; /* 使用 Flexbox */
+        flex-direction: column; /* 垂直排列內容 */
+        align-items: center; /* 水平置中 */
+        justify-content: center; /* 垂直置中 */
+        transition: width 0.5s ease, height 0.5s ease; /* 添加平滑過渡 */
+        cursor: pointer; /* 鼠標指標改變為手指 */
+    }
+    
+    .circel:hover {
+        width: 220px; 
+        height: 220px; 
+    }
+    
+    .icon {
+        font-size: 70px; 
+    }
+    
+    .icon-content {
+        text-align: center; 
+    }
+    
+    .icon-content p {
+        font-size: 20px; 
+        margin: 0; 
+    }
+}

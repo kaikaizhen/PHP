@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 確保 body 的高度為 100% */
+    overflow: hidden; /* 防止滾動 */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* 使子元素能夠絕對定位 */
+    height: 100vh;
+}
+
+.background {
+    position: absolute; /* 使圖片位於背景 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* 或根據需要設置 */
+    object-fit: cover; /* 確保圖片覆蓋整個容器 */
+    z-index: -1; /* 確保背景圖片在內容之下 */
+}
+
+.Content {
+    width: 300px;
+    height: 45vh;
+    background-color: rgba(173, 216, 230, 0.5); /* 淡藍色背景 */
+    backdrop-filter: blur(5px); /* 設定模糊程度 */
+    border-radius: 10px; /* 可選，增加圓角 */
+    text-align: center;
+    z-index: 1; /* 確保內容在圖片之上 */
+}
+
+.Title {
+    color: #1B2D58;
+}
+
+input[type="text"] {
+    border: none; /* 移除邊框 */
+    border-bottom: 2px solid #1B2D58; /* 添加下底線，顏色可以根據需要調整 */
+    outline: none; /* 移除聚焦時的邊框 */
+    padding: 10px 5px; /* 增加上下內邊距 */
+    margin:20px 0px;
+    width: 70%; /* 設置寬度為100%以適應容器 */
+    background: transparent; /* 使背景透明 */
+}
+
+input[type="text"]::placeholder{
+    color:white;
+}
+
+input[type="text"]:focus {
+    border-bottom: 2px solid white; /* 當聚焦時改變底線顏色 */
+    width:80%;
+}
+
+input[type="password"] {
+    border: none; /* 移除邊框 */
+    border-bottom: 2px solid #1B2D58; /* 添加下底線，顏色可以根據需要調整 */
+    outline: none; /* 移除聚焦時的邊框 */
+    padding: 10px 5px; /* 增加上下內邊距 */
+    margin:20px 0px;
+    width: 70%; /* 設置寬度為100%以適應容器 */
+    background: transparent; /* 使背景透明 */
+    
+}
+
+input[type="password"]::placeholder{
+    color:white;
+}
+
+input[type="password"]:focus {
+    border-bottom: 2px solid white; /* 當聚焦時改變底線顏色 */
+    width:80%;
+}
+
+@media (max-width:768px) {
+    .Content {
+        width: 350px;
+        height: 30vh;
+        background-color: rgba(173, 216, 230, 0.5); /* 淡藍色背景 */
+        backdrop-filter: blur(5px); /* 設定模糊程度 */
+        border-radius: 10px; /* 可選，增加圓角 */
+        text-align: center;
+        z-index: 1; /* 確保內容在圖片之上 */
+    }
+}

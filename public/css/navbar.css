@@ -1,0 +1,15 @@
+/* 設定navbar-toggler的背景顏色和邊框顏色 */
+.navbar-toggler {
+    background-color: transparent; /* 透明背景 */
+    border: 1px solid white; /* 白色邊框 */
+}
+
+/* 當按鈕未展開時 */
+.navbar-toggler.collapsed {
+    background-color: transparent; /* 透明背景 */
+}
+
+/* 修改切換圖示的顏色為白色 */
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
